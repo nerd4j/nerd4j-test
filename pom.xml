@@ -20,9 +20,9 @@
   <inceptionYear>2011</inceptionYear>
   
   <scm>
-    <url>https://176.34.137.172:6368/svn/nerd4j/test</url>
-    <connection>scm:svn:https://176.34.137.172:6368/svn/nerd4j/test/trunk</connection>
-    <developerConnection>scm:svn:https://176.34.137.172:6368/svn/nerd4j/test/trunk</developerConnection>
+    <url>https://github.com/nerd4j/nerd4j-test</url>
+    <connection>scm:git:git@github.com:nerd4j/nerd4j-test.git</connection>
+    <developerConnection>scm:git:git@github.com:nerd4j/nerd4j-test.git</developerConnection>
   </scm>
 
   <dependencies>
