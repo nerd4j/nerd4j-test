@@ -21,80 +21,63 @@
  */
 package org.nerd4j.test;
 
-import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
-import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.test.annotation.IfProfileValue;
-import org.springframework.test.annotation.ProfileValueSourceConfiguration;
-import org.springframework.test.annotation.Repeat;
-import org.springframework.test.annotation.Rollback;
-import org.springframework.test.annotation.Timed;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
 import org.springframework.test.context.support.DirtiesContextTestExecutionListener;
-import org.springframework.test.context.transaction.AfterTransaction;
-import org.springframework.test.context.transaction.BeforeTransaction;
-import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Abstract class useful for the support of JUnit test with transactional
  * behavior and dependency injection provided by the <tt>Spring</tt> framework.
  * 
  * <p>
- *  <b>Test runner</b>: {@link SpringJUnit4ClassRunner}<br> provides the environment
- *                      that allows the execution of the test into the <tt>Spring</tt>
- *                      context. It also provides support for the following annotations:
- *  <ul>
- *   <li>{@link Test &#64;Test}</li>
- *   <li>{@link ExpectedException &#64;ExpectedException}</li>
- *   <li>{@link Timed &#64;Timed}</li>
- *   <li>{@link Repeat &#64;Repeat}</li>
- *   <li>{@link Ignore &#64;Ignore}</li>
- *   <li>{@link ProfileValueSourceConfiguration &#64;ProfileValueSourceConfiguration}</li>
- *   <li>{@link IfProfileValue &#64;IfProfileValue}</li>
- *  </ul>
- * </p>
+ * <b>Test runner</b>: {@link SpringJUnit4ClassRunner}<br> provides the environment
+ *                     that allows the execution of the test into the <tt>Spring</tt>
+ *                     context. It also provides support for the following annotations:
+ * <ul>
+ *  <li>{@link org.junit.Test &#64;Test}</li>
+ *  <li>{@link org.springframework.test.annotation.ExpectedException &#64;ExpectedException}</li>
+ *  <li>{@link org.springframework.test.annotation.Timed &#64;Timed}</li>
+ *  <li>{@link org.springframework.test.annotation.Repeat &#64;Repeat}</li>
+ *  <li>{@link org.junit.Ignore &#64;Ignore}</li>
+ *  <li>{@link org.springframework.test.annotation.ProfileValueSourceConfiguration &#64;ProfileValueSourceConfiguration}</li>
+ *  <li>{@link org.springframework.test.annotation.IfProfileValue &#64;IfProfileValue}</li>
+ * </ul>
  * 
  * <p>
- *  <b>Execution listener</b>: {@link DependencyInjectionTestExecutionListener}<br>
- *                             provides base support for the dependency injection
- *                             when other listeners are involved.
- *                             If there are no other listeners involved this can be removed.
- * </p>
+ * <b>Execution listener</b>: {@link DependencyInjectionTestExecutionListener}<br>
+ *                            provides base support for the dependency injection
+ *                            when other listeners are involved.
+ *                            If there are no other listeners involved this can be removed.
  * 
  * <p>
- *  <b>Execution listener</b>: {@link DirtiesContextTestExecutionListener}<br>
- *                             allows the management of a <i>dirty context</i>.
- *                             A <i>dirty</i> context is closed and removed
- *                             after the test execution.
- *                             It also provides support for the following annotation:
- *  <ul>
- *   <li>{@link DirtiesContext &#64;DirtiesContext}</li>
- *  </ul>
- * </p>
+ * <b>Execution listener</b>: {@link DirtiesContextTestExecutionListener}<br>
+ *                            allows the management of a <i>dirty context</i>.
+ *                            A <i>dirty</i> context is closed and removed
+ *                            after the test execution.
+ *                            It also provides support for the following annotation:
+ * <ul>
+ *  <li>{@link org.springframework.test.annotation.DirtiesContext &#64;DirtiesContext}</li>
+ * </ul>
  * 
  * <p>
- *  <b>Execution listener</b>: {@link TransactionalTestExecutionListener}<br>
- *                             provides support for transactions and allows test
- *                             to be executed in a transactional environment.
- *                             It also provides support for the following annotations:
- *  <ul>
- *   <li>{@link Transactional &#64;Transactional}</li>
- *   <li>{@link Rollback &#64;Rollback}</li>
- *   <li>{@link BeforeTransaction &#64;BeforeTransaction}</li>
- *   <li>{@link AfterTransaction &#64;AfterTransaction}</li>
- *  </ul>
+ * <b>Execution listener</b>: {@link TransactionalTestExecutionListener}<br>
+ *                            provides support for transactions and allows test
+ *                            to be executed in a transactional environment.
+ *                            It also provides support for the following annotations:
+ * <ul>
+ *  <li>{@link org.springframework.transaction.annotation.Transactional &#64;Transactional}</li>
+ *  <li>{@link org.springframework.test.annotation.Rollback &#64;Rollback}</li>
+ *  <li>{@link org.springframework.test.context.transaction.BeforeTransaction &#64;BeforeTransaction}</li>
+ *  <li>{@link org.springframework.test.context.transaction.AfterTransaction &#64;AfterTransaction}</li>
+ * </ul>
  * 
- *  The behavior of the transactions can be handled at a class levelusing
- *  {@link TransactionConfiguration &#64;TransactionConfiguration} or at
- *  a method level using {@link Rollback &#64;Rollback}.
- * </p>
+ * The behavior of the transactions can be handled at a class levelusing
+ * {@link org.springframework.test.context.transaction.TransactionConfiguration &#64;TransactionConfiguration} or at
+ * a method level using {@link org.springframework.test.annotation.Rollback &#64;Rollback}.
  * 
  * @author Nerd4j Team
  */

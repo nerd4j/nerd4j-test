@@ -25,13 +25,13 @@ import java.lang.reflect.Field;
 
 import org.nerd4j.util.ReflectionUtil;
 
+
 /**
  * Abstract class useful for the support of JUnit based mock tests.
  * 
  * <p>
  *  This class provides the support methods for the injection of
  *  mock objects into the methods of the test classes.
- * </p> 
  * 
  * @author Nerd4j Team
  */
@@ -59,7 +59,7 @@ public abstract class BaseUnitTest extends BaseTest
      * @param fieldName field to be changed.
      * @param subject   object to inject.
      * 
-     * @throws SecurityException
+     * @throws SecurityException if the injection fails.
      */
     protected void inject( Object target, String fieldName, Object subject )
     {

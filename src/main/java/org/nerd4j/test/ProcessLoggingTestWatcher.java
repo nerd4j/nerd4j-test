@@ -51,8 +51,7 @@ public class ProcessLoggingTestWatcher extends TestWatcher
     /**
      * Default constructor.
      * <p>
-     *  A default {@link Logger} will be created.
-     * </p>
+     * A default {@link Logger} will be created.
      */
     public ProcessLoggingTestWatcher()
     {
@@ -64,8 +63,7 @@ public class ProcessLoggingTestWatcher extends TestWatcher
 	/**
      * Constructor with parameters.
      * <p>
-     *  Messages will be printed on the given {@link Logger}.
-     * </p>
+     * Messages will be printed on the given {@link Logger}.
      *
      * @param logger {@link Logger} to use.
      */

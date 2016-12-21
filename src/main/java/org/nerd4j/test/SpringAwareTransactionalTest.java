@@ -33,7 +33,6 @@ import org.springframework.transaction.annotation.Transactional;
  *  In addiction to {@link SpringAwareBaseTest} this class ensures each
  *  method of its subclasses to be transactional avoiding the need to
  *  annotate each transactional method.
- * </p>
  * 
  * @author Nerd4j Team
  */
