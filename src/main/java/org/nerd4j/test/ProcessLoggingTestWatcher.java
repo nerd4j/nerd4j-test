@@ -29,7 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Extension of the <code>TestWatcher</code> class that enables to print
+ * Extension of the {@code TestWatcher} class that enables to print
  * log messages during the test execution steps such as:
  * <ul>
  *  <li>starting</li>
