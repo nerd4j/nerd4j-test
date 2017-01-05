@@ -10,7 +10,7 @@
 
   <groupId>org.nerd4j</groupId>
   <artifactId>nerd4j-test</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1-SNAPSHOT</version>
 
   <packaging>jar</packaging>
 
@@ -23,7 +23,7 @@
     <url>https://github.com/nerd4j/nerd4j-test</url>
     <connection>scm:git:git@github.com:nerd4j/nerd4j-test.git</connection>
     <developerConnection>scm:git:git@github.com:nerd4j/nerd4j-test.git</developerConnection>
-    <tag>nerd4j-test-1.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencies>
