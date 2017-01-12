@@ -8,11 +8,11 @@ Currently this class contains a class hierarchy that provides:
 * the integration with the Spring framework providing an easy way for writing `JUnit` tests that load the Spring Context and allow to enable the transactional environment.
 
 
-This library is also available on Maven Central [here] (http://search.maven.org/#artifactdetails|org.nerd4j|nerd4j-test|1.0.0|jar "Maven Central: nerd4j-test") and can be used with the following dependecy declaration:
+This library is also available on Maven Central [here] (http://search.maven.org/#artifactdetails|org.nerd4j|nerd4j-test|1.1.0|jar "Maven Central: nerd4j-test") and can be used with the following dependecy declaration:
 ```xml
 <dependency>
  <groupId>org.nerd4j</groupId>
  <artifactId>nerd4j-test</artifactId>
- <version>1.0.0</version>
+ <version>1.1.0</version>
 </dependency>
 ```
